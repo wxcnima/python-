@@ -1,0 +1,10 @@
+#题目 求100以内的素数
+lo=int(input('输入下限：'))
+high=int(input('输入上限：'))
+for i in range(lo,high):
+    if i>1:
+        for j in range(2,i):
+            if i%j==0:
+                break
+        else:
+            print(i,end=' ')
