@@ -1,0 +1,12 @@
+#题目 按逗号分隔列表。
+
+#使用join（）函数将列表转换为字符串，仅适用于只包含字符串的列表
+L = ['a','b','c']
+print(','.join(L))
+#print(','.join(str(n) for n in L))
+
+
+#使用str函数将列表转换为字符串
+list=[1,2,3,'a','b']
+string=','.join(str(b) for b in list)
+print(string)
