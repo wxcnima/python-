@@ -1,0 +1,12 @@
+#题目 有一个已经排好序的数组。现输入一个数，要求按原来的规律将它插入数组中。
+list=[2,4,6,8,10]
+print('原列表为：',list)
+number=int(input('请输入要在列表中插入的数字：'))
+list.append(number)
+for i in range(len(list)-1):
+    if list[i]>=number:
+        for j in range(i,len(list)):
+            list[j],list[-1]=list[-1],list[j]
+        break
+
+print(list)
