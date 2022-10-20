@@ -1,0 +1,5 @@
+#题目 求1到100之和
+res=0
+for i in range(101):
+    res+=i
+print(res)
