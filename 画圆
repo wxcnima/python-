@@ -1,0 +1,29 @@
+#题目 画图，学用circle画圆形。
+'''
+from tkinter import *
+cav=Canvas(width=800,height=600,bg='yellow')
+cav.pack(expand=YES,fill=BOTH)
+k=1
+j=1
+for i in range(26):
+    cav.create_oval(310-k,250-k,310+k,250+k,width=1)
+    k+=j
+    j+=0.5
+
+mainloop()
+'''
+import tkinter
+from tkinter import *
+from tkinter import messagebox
+root=tkinter.Tk()
+root.title('演示窗口')                  #窗口命名
+#root.geometry('800x800')
+cav=Canvas(width=600,height=600,bg='green')
+#cav.title('演示窗口')
+cav.pack()
+k=10
+for i in range(5):
+    cav.create_oval(100-k,100-k,400+k,400+k)
+    k+=5
+
+mainloop()
