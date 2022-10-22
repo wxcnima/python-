@@ -1,0 +1,13 @@
+#题目 画图，学用rectangle画方形。
+import tkinter
+from tkinter import *
+root=tkinter.Tk()
+root.title('演示窗口')
+cav=Canvas(width=500,height=500,bg='green')
+cav.pack()
+k=8
+for i in range(5):
+    cav.create_rectangle(200-k,200-k,400+k,400+k)
+    k+=5
+
+mainloop()
