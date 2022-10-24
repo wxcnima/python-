@@ -1,0 +1,19 @@
+#题目 输入3个数a,b,c，按大小顺序输出。
+raw=[]
+for i in range(3):
+    a=int(input('第%d个整数为：'%(i+1)))
+    raw.append(a)
+print(raw)
+
+'''
+raw.sort(key=None,reverse=False)
+print(raw)
+for i in range(len(raw)):
+    print(raw[i],end=' ')
+'''
+
+for i in range(len(raw)):
+    for j in range(i,len(raw)):
+        if raw[i]>raw[j]:
+            raw[i],raw[j]=raw[j],raw[i]
+print(raw)
