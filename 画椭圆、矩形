@@ -1,0 +1,11 @@
+if __name__=='__main__':
+    import tkinter
+    from tkinter import *
+    root=tkinter.Tk()
+    root.title('演示窗口')
+    cav=Canvas(width=500,height=500,bg='blue')
+    cav.pack()
+    cav.create_oval(200,200,300,400)
+    cav.create_rectangle(200,200,300,400)
+
+    mainloop()
