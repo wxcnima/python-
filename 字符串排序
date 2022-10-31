@@ -1,0 +1,4 @@
+#题目 字符串排序
+list=['abb','Dab','ccc','Bdd']
+list.sort(key=str.lower,reverse=True)       #不考虑字符大小写
+print(list)
